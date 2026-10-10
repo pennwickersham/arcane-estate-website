@@ -14,22 +14,18 @@ HTML and CSS, made for GitHub Pages. No build step.
 
 Preview locally with `python -m http.server` in this folder and open http://localhost:8000.
 
-## Launch checklist
+## Status
 
-1. **Buy the domain** (e.g. at Porkbun, like the other sites).
-2. **Store buttons** — in `index.html`, replace the two `<span class="store-btn soon">` elements
-   with real links (the comment above them has the markup and the Play URL,
-   `com.arcaneestate.game`).
-3. **Canonical and social tags** — uncomment / fill in the `LAUNCH` block in the `<head>` of
-   `index.html`, and add `"url"` to the JSON-LD.
-4. **Publish** — make the repository public, then Settings → Pages → Deploy from branch `main`,
-   folder `/ (root)`.
-5. **Custom domain** — add a `CNAME` file containing the domain (e.g. `www.example.com`), set it in
-   Settings → Pages, point DNS at GitHub Pages (`A` records 185.199.108–111.153 for the apex, a
-   `CNAME` to `pennwickersham.github.io` for `www`), then tick **Enforce HTTPS**.
-6. **Search Console** — verify the domain by DNS TXT and submit the home page.
-7. **Publisher site** — add the new domain as a button on the Arcane Estate entry at
-   brewsterwickershampublications.com.
+Live at https://www.arcaneestategame.com/ (GitHub Pages, custom domain, DNS at Porkbun). Canonical, Open Graph and
+JSON-LD tags are set. The Google Play button is live (`com.arcaneestate.game`).
+
+## Still to do
+
+1. **App Store button** — when the iOS listing is live, replace the `store-btn soon` span in
+   `index.html` with a link (the comment above it has the markup), and add the App Store URL to
+   the JSON-LD.
+2. **Search Console** — verify the domain by DNS TXT and submit the home page.
+3. **Publisher site** — make sure brewsterwickershampublications.com links here.
 
 The app and both store listings currently link to the privacy policy at
 `https://brewsterwickershampublications.com/arcane-estate/privacy.html`. Keep that page in step
