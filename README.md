@@ -17,15 +17,13 @@ Preview locally with `python -m http.server` in this folder and open http://loca
 ## Status
 
 Live at https://www.arcaneestategame.com/ (GitHub Pages, custom domain, DNS at Porkbun). Canonical, Open Graph and
-JSON-LD tags are set. The Google Play button is live (`com.arcaneestate.game`).
+JSON-LD tags are set. Both store buttons are live: Google Play (`com.arcaneestate.game`) and the
+App Store (`id6817651417`, https://apps.apple.com/us/app/arcane-estate-rune-puzzles/id6817651417).
 
 ## Still to do
 
-1. **App Store button** — when the iOS listing is live, replace the `store-btn soon` span in
-   `index.html` with a link (the comment above it has the markup), and add the App Store URL to
-   the JSON-LD.
-2. **Search Console** — verify the domain by DNS TXT and submit the home page.
-3. **Publisher site** — make sure brewsterwickershampublications.com links here.
+1. **Search Console** — verify the domain by DNS TXT and submit the home page.
+2. **Publisher site** — make sure brewsterwickershampublications.com links here.
 
 The app and both store listings currently link to the privacy policy at
 `https://brewsterwickershampublications.com/arcane-estate/privacy.html`. Keep that page in step
