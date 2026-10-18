@@ -13,6 +13,7 @@ HTML and CSS, made for GitHub Pages. No build step.
 | `robots.txt`, `sitemap.xml` | Crawl rules and the sitemap of the three indexable pages; bump `<lastmod>` when a page changes |
 | `site.css` | Shared styles |
 | `icon.png`, `apple-touch-icon.png`, `favicon.png` | Made from the iOS App Store icon |
+| `og-image.jpg` | 1200×630 social share image (Open Graph / Twitter `summary_large_image`), drawn from the hero art |
 
 Preview locally with `python -m http.server` in this folder and open http://localhost:8000.
 
