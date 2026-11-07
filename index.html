@@ -221,7 +221,22 @@
 <span>One puzzle a day</span><span>Free forever</span><span>Never a guess</span><span>Aether is earned by solving puzzles</span>
 </div>
 <main id="main">
-<section class="experience" id="try-it"><p class="eyebrow">Explore before you choose</p><h2>Try your first weave</h2><p>A small tutorial using numbers as rune ranks. Each rank appears once in every row and column. What belongs in the empty cell?</p><div class="demo-grid"><div class="rune-board"><span>1</span><span>2</span><span>3</span><label><span class="sr-only">Row 1, column 4</span><select aria-label="Missing rune in row 1, column 4" id="rune-answer"><option value="">?</option><option>1</option><option>2</option><option>3</option><option>4</option></select></label><span>3</span><span>4</span><span>1</span><span>2</span><span>2</span><span>1</span><span>4</span><span>3</span><span>4</span><span>3</span><span>2</span><span>1</span></div><div><button id="rune-check">Check my answer</button><button id="rune-hint">Give me a hint</button><p class="demo-status" id="rune-status" role="status">There is no timer. Take your time.</p><p>The full game introduces gold bonds between neighbouring ranks and chevrons pointing to the lesser rank.</p></div></div></section>
+<section class="experience" id="try-it" aria-labelledby="weave-title">
+<p class="eyebrow">The apprentice’s weave · interactive tutorial</p><h2 id="weave-title">A little grid. A real deduction.</h2>
+<p>Twelve spaces to fill. Three rules to bring together. Solve this complete 4 × 4 weave using numbers as rune ranks, or follow the hints to learn how each deduction works.</p>
+<div class="weave-layout"><div class="weave-play">
+<p class="weave-caption"><span>Gold numbers are given</span><span id="weave-progress">0 / 12 filled</span></p>
+<div id="weave-board" class="weave-board" role="group" aria-label="Four by four rune puzzle" aria-describedby="weave-controls weave-clues"></div>
+<p id="weave-controls">Select a space, then a rank. Keyboard: arrows to move, 1–4 to enter, Backspace to clear, N for notes.</p>
+<div class="rank-keys" role="group" aria-label="Choose a rank"><button data-rank="1">1</button><button data-rank="2">2</button><button data-rank="3">3</button><button data-rank="4">4</button><button data-rank="0" aria-label="Clear selected space">Clear</button></div>
+<div class="weave-tools"><button id="weave-notes" aria-pressed="false">Pencil notes: off</button><button id="weave-undo">Undo</button><button id="weave-check">Check placements</button><button id="weave-reset">Start again</button></div>
+<p id="weave-status" class="demo-status" role="status" aria-live="polite">Start anywhere. Nothing is timed, and hints are optional.</p>
+</div><aside class="weave-guide" aria-label="Rules and guidance">
+<h3>Your three rules</h3><ol class="weave-rules"><li><strong>One of each.</strong> Every row and column contains ranks 1, 2, 3 and 4 exactly once. There are no box rules.</li><li><strong><span class="legend-bond">━</span> Gold bond.</strong> Connected ranks differ by exactly one: 1 &amp; 2, 2 &amp; 3, or 3 &amp; 4. A missing bond adds no restriction.</li><li><strong>‹ Chevron.</strong> The pointed end faces the smaller rank. For example, 2 &lt; 4. On the vertical clue, the lower rank is below.</li></ol>
+<div class="weave-hint"><p class="eyebrow">Learn the deduction</p><h3 id="hint-title">Find your first foothold</h3><p id="hint-copy" aria-live="polite">A bond can tell you more than a nearly full row. Ask for a nudge when you want a place to start.</p><button id="weave-hint">Give me a nudge</button></div>
+<details id="weave-clues"><summary>Clues in words</summary><ul><li>R1C2 and R1C3 differ by one.</li><li>R2C1 is greater than R2C2.</li><li>R3C1 is less than R3C2.</li><li>R3C3 is greater than R3C4.</li><li>R4C3 is less than R4C4.</li><li>R1C3 is greater than R2C3.</li><li>R3C1 and R4C1 differ by one.</li></ul></details>
+<p class="weave-footnote">A standalone teaching puzzle, not a live app session. The full game uses rune symbols and grids up to 7 × 7.</p>
+</aside></div><noscript><p>Enable JavaScript to play the tutorial. The three rules and clue descriptions above remain available.</p></noscript></section>
 <section id="weaving">
 <div class="wrap split">
 <div>
