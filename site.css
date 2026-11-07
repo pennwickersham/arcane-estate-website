@@ -121,6 +121,7 @@ h3{font:600 1.08rem/1.3 var(--serif);letter-spacing:.03em;margin:0 0 8px;color:v
 .network a{color:var(--ink);font-weight:700}
 .network a:hover{color:var(--gold)}
 .network span{display:block;font-size:.88rem;color:var(--muted)}
+.network--social ul{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 28px}
 
 footer{border-top:1px solid var(--line);padding:34px 20px 46px;text-align:center;color:var(--dim);font-size:.95rem}
 footer nav{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 22px;margin-bottom:12px}
