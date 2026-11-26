@@ -43,6 +43,8 @@ img,svg{max-width:100%}
 .store-btn b{font-size:1.12rem;font-weight:700}
 a.store-btn:hover{border-color:var(--gold);color:var(--ink)}
 .store-btn.soon{opacity:.8;cursor:default}
+.store-btn.play{border-color:var(--gold)}
+.store-btn.play b{color:var(--gold)}
 .notify{margin:16px 0 0;color:var(--muted);font-size:.98rem}
 .hero-art svg{display:block;width:100%;height:auto}
 .float{animation:float 7s ease-in-out infinite}
