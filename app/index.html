@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get the app — Arcane Estate: Rune Puzzles</title>
+<!-- A doorway for shared cards, not a page to rank: the home page is the one to index. -->
+<meta name="robots" content="noindex,follow">
+<meta name="theme-color" content="#0f0e1a">
+<link rel="icon" type="image/png" sizes="64x64" href="/favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&amp;family=Cinzel:wght@600;700&amp;display=swap" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="/site.css">
+<script>
+// Every card the game shares ends with a link to this page, so its one job is to be quick and to be
+// right: send each reader to the store their device can actually install from. The buttons below
+// are real links, so this works with scripting off and leaves something for a crawler to read.
+(function () {
+  "use strict";
+
+  var PLAY = "https://play.google.com/store/apps/details?id=com.arcaneestate.game" +
+    "&referrer=utm_source%3Dshare_card%26utm_medium%3Dsocial";
+
+  // No country in the path, so each reader lands on their own storefront; ct tags the visit as
+  // coming from a share card in App Store Connect.
+  var APP_STORE = "https://apps.apple.com/app/id6817651417?ct=share_card";
+
+  // ?stay lets us open the page itself without being forwarded off it.
+  if (location.search.indexOf("stay") !== -1) return;
+
+  var ua = navigator.userAgent || "";
+  var isAndroid = /Android/i.test(ua);
+  // iPadOS reports itself as a Mac, so a touch-capable "Mac" is an iPad.
+  var isIos = /iPhone|iPad|iPod/i.test(ua) ||
+    (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+
+  if (isAndroid) location.replace(PLAY);
+  else if (isIos) location.replace(APP_STORE);
+})();
+</script>
+</head>
+<body>
+<nav class="nav" aria-label="Site">
+  <a class="brand" href="/"><img src="/favicon.png" alt="" width="30" height="30">Arcane Estate</a>
+  <div class="links">
+    <a class="keep" href="/support.html">Support</a>
+  </div>
+</nav>
+
+<main class="doc">
+<h1>Get the app</h1>
+<div class="sub">Arcane Estate: Rune Puzzles · free on iPhone, iPad and Android</div>
+<p>One puzzle a day, the same one for every player, and a ruined estate that rises as you solve it.</p>
+<p>
+  <a class="store-btn" href="https://apps.apple.com/app/id6817651417?ct=share_card"><small>Download on the</small><b>App Store</b></a>
+  <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.arcaneestate.game&amp;referrer=utm_source%3Dshare_card%26utm_medium%3Dsocial"><small>Get it on</small><b>Google Play</b></a>
+</p>
+<p>Not ready to install? <a href="/today/">Play today's rite in your browser</a>.</p>
+</main>
+
+<footer>
+  © 2026 <a href="https://brewsterwickershampublications.com/" target="_blank" rel="noopener">Brewster Wickersham Publications</a>
+</footer>
+</body>
+</html>

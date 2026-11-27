@@ -9,6 +9,8 @@ HTML and CSS, made for GitHub Pages. No build step.
 | `index.html` | The home page |
 | `support.html` | Support and common questions |
 | `privacy.html` | Privacy policy (AdMob + RevenueCat, Android and iOS) |
+| `today/` | The browser version of the daily puzzle, linked from every share card. The arcane-estate repository's `publish-web` job replaces the whole folder on every push to its `main`; until the first publish it holds a stand-in page |
+| `app/index.html` | Share-card doorway: forwards Android to Google Play and iPhone/iPad to the App Store, and shows both buttons otherwise (`?stay` to view it). `noindex` |
 | `404.html` | Not-found page (GitHub Pages serves it for any missing path; `noindex`, root-relative links) |
 | `robots.txt`, `sitemap.xml` | Crawl rules and the sitemap of the three indexable pages; bump `<lastmod>` when a page changes |
 | `site.css` | Shared styles |
